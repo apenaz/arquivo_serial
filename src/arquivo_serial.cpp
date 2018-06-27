@@ -19,7 +19,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf("Digite a porta serial que deseja salvar conteudo:\n");
 	scanf("%s", com);
 	sprintf(port, "\\\\.\\%s", com);
-	sprintf(filename, "%s.txt", com);
+	sprintf(filename, "%s.dat", com);
 
 
 
