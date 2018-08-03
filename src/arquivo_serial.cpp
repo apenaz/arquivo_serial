@@ -15,11 +15,14 @@ using namespace std;
 // application reads from the specified serial port and reports the collected data
 int _tmain(int argc, _TCHAR* argv[])
 {
-	char com[6], port[15],filename[15];
+	char com[6], arq[10], port[15],filename[15];
+
 	printf("Digite a porta serial que deseja salvar conteudo:\n");
 	scanf("%s", com);
 	sprintf(port, "\\\\.\\%s", com);
-	sprintf(filename, "%s.dat", com);
+	printf("Digite o nome do arquivo no qual deseja salvar conteudo:\n");
+	scanf("%s", arq);
+	sprintf(filename, "%s.dat", arq);
 
 
 
